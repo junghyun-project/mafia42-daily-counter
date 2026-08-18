@@ -1,0 +1,336 @@
+/* ==========================================
+                Deck Page
+========================================== */
+
+.deck-page{
+
+    width:100%;
+
+}
+
+
+/* ==========================================
+                Card
+========================================== */
+
+.deck-card{
+
+    width:900px;
+
+    max-width:90vw;
+
+    max-height:85vh;
+
+    overflow-y:auto;
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:24px;
+
+    box-shadow:0 12px 40px rgba(0,0,0,.25);
+
+}
+
+
+/* ==========================================
+                Header
+========================================== */
+
+.deck-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:28px;
+
+}
+
+.deck-header h2{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#222;
+
+    margin-bottom:6px;
+
+}
+
+.deck-header p{
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+
+/* ==========================================
+                Count Badge
+========================================== */
+
+.count-badge{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-width:90px;
+
+    height:40px;
+
+    background:#EDF3FF;
+
+    border-radius:20px;
+
+    font-weight:700;
+
+    color:#2563EB;
+
+}
+
+
+/* ==========================================
+                Section
+========================================== */
+
+.deck-section{
+
+    margin-bottom:30px;
+
+}
+
+.deck-section:last-child{
+
+    margin-bottom:0;
+
+}
+
+.deck-section h3{
+
+    margin-bottom:14px;
+
+    font-size:17px;
+
+    color:#333;
+
+}
+
+
+/* ==========================================
+                Default Role
+========================================== */
+
+.default-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:12px;
+
+}
+
+.default-role{
+
+    height:46px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#F8F9FB;
+
+    border:1px solid #D9D9D9;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================
+                Support / Special
+========================================== */
+
+.option-grid,
+
+.special-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:12px;
+
+}
+
+
+/* ==========================================
+                Option Card
+========================================== */
+
+.option-card{
+
+    position:relative;
+
+}
+
+.option-card input{
+
+    display:none;
+
+}
+
+.option-card label{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    height:52px;
+
+    padding:0 8px;
+
+    background:#FFFFFF;
+
+    border:1px solid #D6D6D6;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.15s;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.option-card label:hover{
+
+    background:#F3F7FF;
+
+    border-color:#2563EB;
+
+}
+
+
+/* ==========================================
+                Selected
+========================================== */
+
+.option-card input:checked + label{
+
+    background:#2563EB;
+
+    border-color:#2563EB;
+
+    color:#FFFFFF;
+
+}
+
+
+/* ==========================================
+                Footer
+========================================== */
+
+.deck-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-top:35px;
+
+}
+
+
+/* ==========================================
+                Button
+========================================== */
+
+#createDeck{
+
+    width:180px;
+
+    height:48px;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    border-radius:10px;
+
+}
+
+#createDeck:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* ==========================================
+                Modal
+========================================== */
+
+.modal{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.45);
+
+    z-index:1000;
+
+}
+
+.modal.hidden{
+
+    display:none;
+
+}
+
+
+/* ==========================================
+            Modal Content
+========================================== */
+
+#deckPage{
+
+    width:900px;
+
+    max-width:90vw;
+
+    max-height:90vh;
+
+    overflow-y:auto;
+
+}
