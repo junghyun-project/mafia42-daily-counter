@@ -1,0 +1,1 @@
+# mafia42-daily-counter
