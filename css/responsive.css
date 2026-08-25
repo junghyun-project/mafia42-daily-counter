@@ -1,0 +1,171 @@
+/* ==========================================
+                Tablet
+========================================== */
+
+@media (max-width: 1024px){
+
+    .gallery{
+
+        width:420px;
+
+        min-width:420px;
+
+    }
+
+    .image-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+
+/* ==========================================
+                Mobile
+========================================== */
+
+@media (max-width: 768px){
+
+    html,
+    body{
+
+        height:auto;
+
+        overflow:auto;
+
+    }
+
+    .container{
+
+        flex-direction:column;
+
+        width:100%;
+
+        min-height:100vh;
+
+        height:auto;
+
+    }
+
+    /* Sidebar */
+
+    .sidebar{
+
+        width:100%;
+
+        border-right:none;
+
+        border-bottom:1px solid #3B4048;
+
+    }
+
+    .logo{
+
+        padding:18px;
+
+        text-align:center;
+
+    }
+
+    .sidebar nav{
+
+        flex-direction:row;
+
+    }
+
+    .menu-btn{
+
+        text-align:center;
+
+        padding:0;
+
+    }
+
+    /* Main */
+
+    .content{
+
+        width:100%;
+
+    }
+
+    .content-header{
+
+        padding:0 16px;
+
+    }
+
+    .content-header h2{
+
+        font-size:18px;
+
+    }
+
+    /* Gallery */
+
+    .gallery{
+
+        width:100%;
+
+        min-width:0;
+
+        border-left:none;
+
+        border-top:1px solid #d9d9d9;
+
+    }
+
+    .gallery-header{
+
+        padding:16px;
+
+    }
+
+    .image-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+        justify-items:center;
+
+        gap:12px;
+
+        padding:16px;
+
+    }
+
+    .image-box{
+
+        max-width:none;
+
+    }
+
+}
+
+
+/* ==========================================
+                Small Mobile
+========================================== */
+
+@media (max-width: 480px){
+
+    .image-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .image-name{
+
+        font-size:12px;
+
+    }
+
+    .gallery-header h2,
+    .content-header h2{
+
+        font-size:17px;
+
+    }
+
+}
