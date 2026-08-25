@@ -4,7 +4,9 @@
 
 .time-list{
 
-    flex:1;
+    flex:none;
+
+    height:190px;
 
     list-style:none;
 
@@ -16,9 +18,7 @@
 
     background:#FFFFFF;
 
-    margin:18px;
-
-    min-height:0;
+    margin:12px;
 
 }
 
