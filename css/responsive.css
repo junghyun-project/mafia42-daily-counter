@@ -182,7 +182,7 @@
 
     .logo{
 
-        padding:10px 14px;
+        padding:14px 16px;
 
         display:flex;
 
@@ -194,7 +194,9 @@
 
     .logo h2{
 
-        font-size:16px;
+        font-size:22px;
+
+        font-weight:700;
 
         margin:0;
 
@@ -212,11 +214,27 @@
 
     }
 
+    .sidebar{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:space-between;
+
+    }
+
     .sidebar nav{
 
-        padding:8px 12px;
+        display:flex;
 
-        gap:8px;
+        flex-direction:column;
+
+        width:110px;
+
+        padding:8px;
+
+        gap:6px;
 
     }
 
@@ -224,7 +242,7 @@
 
         height:36px;
 
-        font-size:13px;
+        font-size:12px;
 
         border-radius:8px;
 
@@ -258,7 +276,7 @@
 
         flex:none;
 
-        height:320px;
+        height:210px;
 
         margin:10px;
 
@@ -266,7 +284,7 @@
 
     .time-row{
 
-        min-height:48px;
+        min-height:44px;
 
         grid-template-columns:
         48px
@@ -327,9 +345,11 @@
 
     }
 
-    .image-box{
+    .image-box img{
 
-        max-width:none;
+        width:100%;
+
+        max-width:56px;
 
     }
 
@@ -345,7 +365,7 @@
 
         margin-top:4px;
 
-        font-size:11px;
+        font-size:10px;
 
     }
 
