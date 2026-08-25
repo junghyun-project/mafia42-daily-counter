@@ -5,18 +5,17 @@
 @media (max-width:1024px){
 
     .gallery{
-        width:420px;
-        min-width:420px;
-    }
 
-    .image-grid{
-        grid-template-columns:repeat(3,1fr);
+        width:420px;
+
+        min-width:420px;
+
     }
 
 }
 
 /* ==========================================
-                Mobile App Layout
+            Mobile App Layout
 ========================================== */
 
 @media (max-width:768px){
@@ -24,6 +23,7 @@
     html,
     body{
 
+        width:100%;
         height:100dvh;
         overflow:hidden;
 
@@ -38,19 +38,15 @@
         height:100dvh;
     }
 
-    /* =========================
-            HEADER 20%
-    ========================= */
+    /* ==========================
+            HEADER (20%)
+    ========================== */
 
     .sidebar{
 
+        flex:0 0 20%;
+
         width:100%;
-
-        height:20dvh;
-
-        min-height:90px;
-
-        max-height:140px;
 
         display:grid;
 
@@ -58,15 +54,17 @@
 
         align-items:center;
 
-        padding:12px 16px;
-
         border-right:none;
+
         border-bottom:1px solid #3B4048;
+
+        padding:12px 16px;
     }
 
     .logo{
 
         padding:0;
+
         border:none;
     }
 
@@ -79,7 +77,11 @@
         font-weight:700;
     }
 
-    .logo span,
+    .logo span{
+
+        display:none;
+    }
+
     .sidebar-footer{
 
         display:none;
@@ -107,24 +109,39 @@
         font-size:12px;
     }
 
-    /* =========================
-            TIME 40%
-    ========================= */
+    /* ==========================
+            MAIN (80%)
+    ========================== */
+
+    .main{
+
+        flex:1;
+
+        display:flex;
+
+        flex-direction:column;
+
+        min-height:0;
+    }
+
+    /* ==========================
+            TIME (40%)
+    ========================== */
 
     .content{
 
-        width:100%;
+        flex:1;
 
-        height:40dvh;
+        display:flex;
 
-        flex:none;
+        flex-direction:column;
 
-        overflow:hidden;
+        min-height:0;
     }
 
     .content-header{
 
-        height:10%;
+        flex:0 0 10%;
 
         min-height:40px;
 
@@ -138,18 +155,12 @@
 
     #turnCount{
 
-        height:28px;
-
-        min-width:70px;
-
         font-size:12px;
     }
 
     .time-list{
 
         flex:1;
-
-        height:90%;
 
         margin:8px;
 
@@ -189,28 +200,32 @@
         height:24px;
     }
 
-    /* =========================
-            DECK 40%
-    ========================= */
+    /* ==========================
+            DECK (40%)
+    ========================== */
 
     .gallery{
 
-        width:100%;
+        flex:1;
 
-        height:40dvh;
+        width:100%;
 
         min-width:0;
 
-        flex:none;
-
         border-left:none;
 
-        border-top:1px solid #d9d9d9;
+        border-top:1px solid #D9D9D9;
+
+        display:flex;
+
+        flex-direction:column;
+
+        min-height:0;
     }
 
     .gallery-header{
 
-        height:10%;
+        flex:0 0 10%;
 
         min-height:40px;
 
@@ -229,18 +244,21 @@
 
     .image-grid{
 
-        height:90%;
+        flex:1;
 
-        overflow-y:auto;
+        display:grid;
 
-        grid-template-columns:
-        repeat(4,1fr);
+        grid-template-columns:repeat(4,1fr);
 
         justify-items:center;
+
+        align-content:start;
 
         gap:8px;
 
         padding:8px;
+
+        overflow-y:auto;
     }
 
     .image-box{
@@ -252,7 +270,7 @@
 
         width:100%;
 
-        max-width:56px;
+        max-width:54px;
     }
 
     .image-name{
@@ -277,7 +295,7 @@
 
     .image-box img{
 
-        max-width:52px;
+        max-width:50px;
     }
 
 }
