@@ -2,226 +2,86 @@
                 Tablet
 ========================================== */
 
-@media (max-width: 1024px){
+@media (max-width:1024px){
 
     .gallery{
-
         width:420px;
-
         min-width:420px;
-
     }
 
     .image-grid{
-
         grid-template-columns:repeat(3,1fr);
-
     }
 
 }
 
-
 /* ==========================================
-                Mobile
-========================================== */
-
-@media (max-width: 768px){
-
-    html,
-    body{
-
-        height:auto;
-
-        overflow:auto;
-
-    }
-
-    .container{
-
-        flex-direction:column;
-
-        width:100%;
-
-        min-height:100vh;
-
-        height:auto;
-
-    }
-
-    /* Sidebar */
-
-    .sidebar{
-
-        width:100%;
-
-        border-right:none;
-
-        border-bottom:1px solid #3B4048;
-
-    }
-
-    .logo{
-
-        padding:18px;
-
-        text-align:center;
-
-    }
-
-    .sidebar nav{
-
-        flex-direction:row;
-
-    }
-
-    .menu-btn{
-
-        text-align:center;
-
-        padding:0;
-
-    }
-
-    /* Main */
-
-    .content{
-
-        width:100%;
-
-    }
-
-    .content-header{
-
-        padding:0 16px;
-
-    }
-
-    .content-header h2{
-
-        font-size:18px;
-
-    }
-
-    /* Gallery */
-
-    .gallery{
-
-        width:100%;
-
-        min-width:0;
-
-        border-left:none;
-
-        border-top:1px solid #d9d9d9;
-
-    }
-
-    .gallery-header{
-
-        padding:16px;
-
-    }
-
-    .image-grid{
-
-        grid-template-columns:repeat(3,1fr);
-
-        justify-items:center;
-
-        gap:12px;
-
-        padding:16px;
-
-    }
-
-    .image-box{
-
-        max-width:none;
-
-    }
-
-}
-
-
-/* ==========================================
-                Small Mobile
-========================================== */
-
-@media (max-width: 480px){
-
-    .image-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-    .image-name{
-
-        font-size:12px;
-
-    }
-
-    .gallery-header h2,
-    .content-header h2{
-
-        font-size:17px;
-
-    }
-
-}
-/* ==========================================
-        Mobile Clean Layout
+                Mobile App Layout
 ========================================== */
 
 @media (max-width:768px){
 
     html,
     body{
-        overflow:auto;
+
+        height:100dvh;
+        overflow:hidden;
+
     }
 
     .container{
+
+        display:flex;
         flex-direction:column;
-        min-height:100vh;
+
+        width:100%;
+        height:100dvh;
     }
 
-    /* ---------- Header ---------- */
+    /* =========================
+            HEADER 20%
+    ========================= */
 
     .sidebar{
 
         width:100%;
 
+        height:20dvh;
+
+        min-height:90px;
+
+        max-height:140px;
+
         display:grid;
 
-        grid-template-columns:1fr 80px;
+        grid-template-columns:1fr 90px;
 
         align-items:center;
 
-        padding:10px 14px;
+        padding:12px 16px;
 
         border-right:none;
-
         border-bottom:1px solid #3B4048;
     }
 
     .logo{
 
         padding:0;
-
-        margin:0;
+        border:none;
     }
 
     .logo h2{
 
         margin:0;
 
-        font-size:22px;
+        font-size:24px;
 
         font-weight:700;
     }
 
     .logo span,
     .sidebar-footer{
+
         display:none;
     }
 
@@ -231,55 +91,95 @@
 
         flex-direction:column;
 
-        gap:4px;
+        gap:6px;
 
         padding:0;
     }
 
     .menu-btn{
 
-        height:30px;
+        height:32px;
 
         padding:0;
 
-        font-size:12px;
-
         text-align:center;
+
+        font-size:12px;
     }
 
-    /* ---------- TIME ---------- */
+    /* =========================
+            TIME 40%
+    ========================= */
 
     .content{
 
         width:100%;
+
+        height:40dvh;
+
+        flex:none;
+
+        overflow:hidden;
     }
 
     .content-header{
 
-        height:42px;
+        height:10%;
+
+        min-height:40px;
 
         padding:0 12px;
     }
 
     .content-header h2{
 
-        font-size:15px;
+        font-size:16px;
+    }
+
+    #turnCount{
+
+        height:28px;
+
+        min-width:70px;
+
+        font-size:12px;
     }
 
     .time-list{
 
-        flex:none;
+        flex:1;
 
-        height:140px;
+        height:90%;
 
-        margin:10px;
+        margin:8px;
 
         overflow-y:auto;
     }
 
     .time-row{
 
-        min-height:34px;
+        min-height:40px;
+
+        grid-template-columns:
+        45px
+        55px
+        1fr
+        30px;
+    }
+
+    .turn,
+    .time{
+
+        font-size:12px;
+    }
+
+    .role{
+
+        gap:6px;
+
+        padding-left:4px;
+
+        font-size:12px;
     }
 
     .role img{
@@ -289,13 +189,19 @@
         height:24px;
     }
 
-    /* ---------- DECK ---------- */
+    /* =========================
+            DECK 40%
+    ========================= */
 
     .gallery{
 
         width:100%;
 
+        height:40dvh;
+
         min-width:0;
+
+        flex:none;
 
         border-left:none;
 
@@ -304,35 +210,74 @@
 
     .gallery-header{
 
-        padding:8px 12px;
+        height:10%;
+
+        min-height:40px;
+
+        padding:0 12px;
     }
 
     .gallery-header h2{
 
-        font-size:15px;
+        font-size:16px;
+    }
+
+    .gallery-header span{
+
+        font-size:12px;
     }
 
     .image-grid{
 
-        grid-template-columns:repeat(4,1fr);
+        height:90%;
 
-        gap:6px;
+        overflow-y:auto;
+
+        grid-template-columns:
+        repeat(4,1fr);
+
+        justify-items:center;
+
+        gap:8px;
 
         padding:8px;
+    }
+
+    .image-box{
+
+        max-width:none;
     }
 
     .image-box img{
 
         width:100%;
 
-        max-width:52px;
+        max-width:56px;
     }
 
     .image-name{
 
-        font-size:10px;
+        margin-top:4px;
 
-        margin-top:2px;
+        font-size:10px;
+    }
+
+}
+
+/* ==========================================
+            Small Mobile
+========================================== */
+
+@media (max-width:430px){
+
+    .logo h2{
+
+        font-size:22px;
+    }
+
+    .image-box img{
+
+        max-width:52px;
     }
 
 }
