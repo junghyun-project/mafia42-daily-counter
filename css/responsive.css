@@ -169,3 +169,204 @@
     }
 
 }
+
+/* ==========================================
+        Mobile UX V4
+========================================== */
+
+@media (max-width: 768px){
+
+    /* ------------------------
+       Header 최소화
+    ------------------------ */
+
+    .logo{
+
+        padding:10px 14px;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:space-between;
+
+    }
+
+    .logo h2{
+
+        font-size:16px;
+
+        margin:0;
+
+    }
+
+    .logo span{
+
+        display:none;
+
+    }
+
+    .sidebar-footer{
+
+        display:none;
+
+    }
+
+    .sidebar nav{
+
+        padding:8px 12px;
+
+        gap:8px;
+
+    }
+
+    .menu-btn{
+
+        height:36px;
+
+        font-size:13px;
+
+        border-radius:8px;
+
+    }
+
+    /* ------------------------
+       TIME 영역 축소
+    ------------------------ */
+
+    .content-header{
+
+        height:48px;
+
+        padding:0 12px;
+
+    }
+
+    .content-header h2{
+
+        font-size:16px;
+
+    }
+
+    #turnCount{
+
+        font-size:12px;
+
+    }
+
+    .time-list{
+
+        flex:none;
+
+        height:320px;
+
+        margin:10px;
+
+    }
+
+    .time-row{
+
+        min-height:48px;
+
+        grid-template-columns:
+        48px
+        60px
+        1fr
+        34px;
+
+    }
+
+    .role{
+
+        gap:6px;
+
+        padding-left:4px;
+
+        font-size:13px;
+
+    }
+
+    .role img{
+
+        width:22px;
+
+        height:30px;
+
+    }
+
+    /* ------------------------
+       DECK 영역 확대
+    ------------------------ */
+
+    .gallery{
+
+        flex:1;
+
+    }
+
+    .gallery-header{
+
+        padding:10px 12px;
+
+    }
+
+    .gallery-header h2{
+
+        font-size:16px;
+
+    }
+
+    .image-grid{
+
+        grid-template-columns:
+        repeat(4,minmax(0,1fr));
+
+        gap:8px;
+
+        padding:10px;
+
+    }
+
+    .image-box{
+
+        max-width:none;
+
+    }
+
+    .image-box img{
+
+        width:100%;
+
+        max-width:72px;
+
+    }
+
+    .image-name{
+
+        margin-top:4px;
+
+        font-size:11px;
+
+    }
+
+}
+
+/* ------------------------
+   작은 기기
+------------------------ */
+
+@media (max-width: 430px){
+
+    .time-list{
+
+        height:280px;
+
+    }
+
+    .image-box img{
+
+        max-width:64px;
+
+    }
+
+}
